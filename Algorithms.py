@@ -4,10 +4,6 @@ from numpy import exp
 from numpy import log
 
 
-
-
-
-
 def NAS(delta, epsi, getX):
     t = 0
     mu = 0
@@ -149,6 +145,9 @@ def EBGStop(delta, epsi, getX, beta = 1.1, p = 1.1):
         print((1-epsi)*UB - (1+epsi)*LB)
     mu_hat = float(np.sign(mu)*((1+epsi)*LB+(1-epsi)*UB)/2)
     return mu_hat, t
+
+
+# Betting Algorithms
 
 
 
